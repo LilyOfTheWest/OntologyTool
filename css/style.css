@@ -1,0 +1,9 @@
+QWidget#optionsToolWidget
+{
+  border:1px solid lightgrey;
+}
+
+QWidget#toolSelectionWidget
+{
+  border:1px solid lightgrey;
+}

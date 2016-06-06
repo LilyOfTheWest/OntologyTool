@@ -1,0 +1,20 @@
+CONSTRUCT { ?P rdf:type rdf:Property . }  WHERE { ?S ?P ?O . }
+CONSTRUCT { ?S rdf:type ?C . }  WHERE { ?P rdfs:Domain ?C . ?S ?P ?O . }
+CONSTRUCT { ?O rdf:type ?C . }  WHERE { ?P rdfs:range ?C . ?S ?P ?O . }
+CONSTRUCT { ?P rdfs:subPropertyOf ?R . }  WHERE { ?Q rdfs:subPropertyOf ?R . ?P rdfs:subPropertyOf ?Q . }
+CONSTRUCT { ?S ?R ?O . }  WHERE { ?P rdfs:subPropertyOf ?R . ?S ?P ?O . }
+CONSTRUCT { ?C rdfs:subClassOf rdfs:Resource . }  WHERE { ?C rdf:type rdfs:Class . }
+CONSTRUCT { ?S rdf:type ?B . }  WHERE { ?A rdfs:subClassOf ?B . ?S rdf:type ?A . }
+CONSTRUCT { ?A rdfs:subClassOf ?C . }  WHERE { ?B rdfs:subClassOf ?C . ?A rdfs:subClassOf ?B . }
+CONSTRUCT { ?X rdfs:subPropertyOf ?C . }  WHERE { ?X rdf:type rdfs:ContainerMembershipProperty . }
+CONSTRUCT { ?X rdfs:subClassOf rdfs:Literal . }  WHERE { ?X rdf:type rdfs:Datatype . }
+CONSTRUCT { ?A mcf:PartOf ?B . }   WHERE { ?A mcf:PartOf ?C . ?C mcf:PartOf ?B . }
+CONSTRUCT { ?A mcf:IsInvolvedIn ?B . }  WHERE { ?A mcf:IsInvolvedIn ?C . ?C mcf:IsInvolvedIn ?B . }
+CONSTRUCT { ?A rdfs:subClassOf ?B . }  WHERE { ?A mcf:LeftSubClassOf ?B . }
+CONSTRUCT { ?A rdfs:subClassOf ?B . }  WHERE { ?A mcf:RightSubClassOf ?B . }
+CONSTRUCT { ?A mcf:ParticipatesTo ?B . }  WHERE { ?A mcf:hasFunction ?B . }
+CONSTRUCT { ?A mcf:InsertOn ?B . }  WHERE { ?A rdfs:subClassOf ?C . ?C mcf:InsertOn ?B . }
+CONSTRUCT { ?A mcf:IsInvolvedIn ?B . }  WHERE { ?A mcf:IsInvolvedIn ?C . ?C rdfs:subClassOf ?B . }
+CONSTRUCT { ?A mcf:Participates ?B . }  WHERE { ?A mcf:Participates ?C . ?C rdfs:subClassOf ?B . }
+CONSTRUCT { ?A mcf:Participates ?B . }  WHERE { ?A mcf:Participates ?C . ?C mcf:IsInvolvedIn ?B . }
+CONSTRUCT { ?A mcf:InsertOn ?B . }  WHERE { ?A mcf:InsertOn ?C . ?C mcf:PartOf ?B . }

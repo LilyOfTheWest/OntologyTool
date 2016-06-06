@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:ns1="http://www.mycorporisfabrica.org/ontology/mcf.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://www.mycorporisfabrica.org/ontology/mcf.owl#Left_tibia">
+    <ns1:PartOf rdf:resource="http://www.mycorporisfabrica.org/ontology/mcf.owl#Medial_part_of_proximal_epiphysis_of_left_tibia"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mycorporisfabrica.org/ontology/mcf.owl#Medial_part_of_proximal_epiphysis_of_left_tibia">
+    <ns1:InsertOn rdf:resource="http://www.mycorporisfabrica.org/ontology/mcf.owl#Distal_tendon_of_left_sartorius"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mycorporisfabrica.org/ontology/mcf.owl#Distal_tendon_of_left_sartorius">
+    <ns1:PartOf rdf:resource="http://www.mycorporisfabrica.org/ontology/mcf.owl#Left_sartorius"/>
+  </rdf:Description>
+</rdf:RDF>

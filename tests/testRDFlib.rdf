@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:ns1="http://www.mycorporisfabrica.org/ontology/mcf.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.mycorporisfabrica.org/ontology/mcf.owl#Left_Tibiofemoral_joint">
+    <ns1:LeftSubClassOf rdf:resource="http://www.mycorporisfabrica.org/ontology/mcf.owl#Tibiofemoral_joint"/>
+    <rdfs:subClassOf rdf:resource="http://www.mycorporisfabrica.org/ontology/mcf.owl#Left_knee_joint"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mycorporisfabrica.org/ontology/mcf.owl#Patellofemoral_joint">
+    <rdfs:subClassOf rdf:resource="http://www.mycorporisfabrica.org/ontology/mcf.owl#Knee_joints"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mycorporisfabrica.org/ontology/mcf.owl#Tibiofemoral_joint">
+    <rdfs:subClassOf rdf:resource="http://www.mycorporisfabrica.org/ontology/mcf.owl#Knee_joints"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mycorporisfabrica.org/ontology/mcf.owl#Right_Tibiofemoral_joint">
+    <rdfs:subClassOf rdf:resource="http://www.mycorporisfabrica.org/ontology/mcf.owl#Right_knee_joint"/>
+    <ns1:RightSubClassOf rdf:resource="http://www.mycorporisfabrica.org/ontology/mcf.owl#Tibiofemoral_joint"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mycorporisfabrica.org/ontology/mcf.owl#Right_Patellofemoral_joint">
+    <rdfs:subClassOf rdf:resource="http://www.mycorporisfabrica.org/ontology/mcf.owl#Right_knee_joint"/>
+    <ns1:RightSubClassOf rdf:resource="http://www.mycorporisfabrica.org/ontology/mcf.owl#Patellofemoral_joint"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mycorporisfabrica.org/ontology/mcf.owl#Left_knee_joint">
+    <ns1:LeftSubClassOf rdf:resource="http://www.mycorporisfabrica.org/ontology/mcf.owl#Knee_joints"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mycorporisfabrica.org/ontology/mcf.owl#left_Patellofemoral_joint">
+    <ns1:LeftSubClassOf rdf:resource="http://www.mycorporisfabrica.org/ontology/mcf.owl#Patellofemoral_joint"/>
+    <rdfs:subClassOf rdf:resource="http://www.mycorporisfabrica.org/ontology/mcf.owl#Left_knee_joint"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mycorporisfabrica.org/ontology/mcf.owl#Right_knee_joint">
+    <ns1:RightSubClassOf rdf:resource="http://www.mycorporisfabrica.org/ontology/mcf.owl#Knee_joints"/>
+  </rdf:Description>
+</rdf:RDF>

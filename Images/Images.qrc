@@ -1,0 +1,11 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+	<file>./add-icon.png</file>
+	<file>./cancel-icon.png</file>
+	<file>./del-icon.png</file>
+	<file>./folder-search.png</file>
+	<file>./ok-icon.png</file>
+	<file>./Save-icon.png</file>
+	<file>./stop-icon.ico</file>
+</qresource>
+</RCC>
